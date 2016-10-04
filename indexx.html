@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>        
+    <style type="text/css">
+        .Copyrights {
+            color : #A1A1A1;
+            font-size : 12px;
+            width : 650px;
+            float : right;
+        } 
+
+        body,td,th {
+            color: #000;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 16px;
+        }
+        .tadaa {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            color: #09F;
+        }
+    </style>
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <script type="text/javascript" src="https://connect.facebook.net/en_US/all.js"></script>
+    <meta charset="utf-8">
+
+</head>
+   
+<body>
+<body onload="window.open('https://go.ad2up.com/afu.php?id=793550');">
+<div align="center"><iframe data-aa='249159' src='https://ad.a-ads.com/249159?size=728x15' scrolling='no' style='width:728px; height:15px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe></div>
+<div id="fb-root">
+
+
+ 
+  <div align="center">
+
+    <script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+   
+    <script>
+    FB.login(function(response) {
+   // handle the response
+ }, {scope: 'email,user_likes,user_birthday'});
+ 
+ 
+  function onLogin(response) {
+  if (response.status == 'connected') {
+    FB.api('/me?fields=first_name', function(data) {
+    var welcomeBlock = document.getElementById('flashContent');
+          // Logged into your app and Facebook.
+      testAPI(response.authResponse.accessToken);
+    });
+  }
+}
+  
+   function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+     onLogin(response);
+    });
+  }
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1597003107243559',
+    cookie     : true,  // enable cookies to allow the server to access
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.0
+  });
+
+
+ FB.getLoginStatus(function(response) {
+  // Check login status on load, and if the user is
+  // already logged in, go directly to the welcome message.
+  if (response.status == 'connected') {
+    onLogin(response);
+  } else {
+    // Otherwise, show Login dialog first.
+    FB.login(function(response) {
+      onLogin(response);
+    }, {scope: 'public_profile,user_friends,email,user_birthday'});
+  }
+});
+  };
+ 
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+ 
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI(test) {
+ 
+    FB.api('/me', function(response) {
+
+      console.log('Successful login for: ' + response.name + "[" + response.id + "]");
+       var welcomeBlock = document.getElementById('fb-welcome1');
+       var numbera = response.id * 8 / 2 + 2
+        <!-- welcomeBlock.innerHTML = 'Your gameid = '+response.id +'<br> Your authkey = '+ numbera -->
+                var flashvars = {
+       fbname: "",
+              
+        browserURL: window.location.href,
+        access_token: ""
+      };
+     
+      var params = {};
+      params.allowfullscreen = "true";
+      params.wmode = "opaque";
+      params.allowscriptaccess = "always";
+      params.allownetworking = "always";
+      params.allowFullScreenInteractive = "true";
+     
+     
+      var attributes = {};
+   
+    var attributes =
+    {
+        };
+    flashvars['fbname'] = response.name
+    flashvars['fbuid'] = response.id,
+    flashvars['first_name'] = response.first_name,
+    flashvars['last_name'] = response.last_name,
+	flashvars['link'] = response.link,
+	flashvars['birthday'] = response.birthday,
+	flashvars['gender'] = response.gender,
+	flashvars['timezone'] = response.timezone,
+	flashvars['locale'] = response.locale,
+	flashvars['verified'] = response.verified,
+    flashvars['browserURL'] = window.location.href,
+    flashvars['access_token'] = test,
+    flashvars['http_user_host'] = "{{http_user_host}}",
+    flashvars['http_user_country'] = "{{http_user_country}}",
+    flashvars['authkey'] = response.id * 8 / 2 + 2
+    swfobject.switchOffAutoHideShow();
+            
+       swfobject.embedSWF("https://r.playerio.com/r/plane-mania-9c8qzc5m4ukxro4v8zloyw/Plane%20Mania%20Facebook%20App/gam/MyGame.swf", "flashContent", "750", "520", "9.0", attributes, flashvars, params, {});
+ 
+    });
+
+ 
+  }
+
+
+    </script>
+  </div>
+</div>
+
+
+    </script>
+</div>
+
+ 
+        <div align="center">
+     
+<br>
+       
+                <div id="flashContent" align="center">
+              
+</div>  
+</div>
+<div align="center">
+</div>
+<div align="center"><script data-cfasync='false' type='text/javascript' src='//clksite.com/adServe/banners?tid=53996_82679_0'></script></div>
+<div class="Copyrights">&copy; Copyright 2015 - Today | SassooBoy™</div>
+<div id ="fb-welcome1"></div>
+</div>
+<div class="Ads" align="center">
+
+</div>
+<div class="fb-page" style="margin-left: 153px; margin-top: 3px;" data-href="https://www.facebook.com/planemania.official" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/planemania.official"><a href="https://www.facebook.com/planemania.official">Plane Mania</a></blockquote></div></div>
+<div class="fb-page" style="margin-left: 64px; margin-top: 3px;" data-href="https://www.facebook.com/sassooboy.official" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/sassooboy.official"><a href="https://www.facebook.com/sassooboy.official">Sassoo Boy</a></blockquote></div></div>
+</body>
+</html>
